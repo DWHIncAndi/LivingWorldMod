@@ -1,34 +1,19 @@
 {
-	"schemaVersion": 1,
-	"id": "living-world",
-	"version": "${version}",
-	"name": "Living World",
-	"description": "A Fabric mod where your world tells its own story. Explore, build, and shape a living world where every choice changes relationships, locations, and your ultimate fate.",
-	"authors": [
-		"dwhincandi",
-		"prodbyeagle"
-	],
-	"contact": {
-		"homepage": "https://linktr.ee/dwhincandi"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/living-world/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.dwhincandi.livingworld.LivingWorld"
-		],
-		"fabric-datagen": [
-			"net.dwhincandi.livingworld.LivingWorldDataGenerator"
-		]
-	},
-	"mixins": [
-		"living-world.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.3",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "living-world",
+  "version": "${version}",
+  "name": "Living World Director",
+  "description": "Eine optionale, persistente Story-Kampagne, die auf Spielerentscheidungen reagiert.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dwhincandi.livingworld.LivingWorldDirector"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
 }
